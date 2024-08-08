@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nut</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assests\dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
+        </div>
+    </header>
+        <nav class="header-nav">
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#flavours">Flavours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+
+    <main>
+        <section id="about" class="about-us">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="assests\dr.nut old.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests\dr.nut old.jpg" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests\dr.nut old.jpg" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests\dr.nut old.jpg" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="history">
+            <h2>History of Dr. Nut</h2>
+            <p>Dr. Nut was a booming brand of pop back in the days. But it never made it to the present day. Dr. Nut was originated in 1982 by Mr. Frankinsline. He used to be an animal surgeon and mostly treated eagles. He got an acorn stuck in them. Dr thought of a brilliant idea of making these nuts into drinks no one will get them stuck again. It became a legend in late 80s and with modernization Dr. Nut went downhill and was forgotten. More than 20 years later... Looking at a dying legend, our team decided to bring back the brand Dr. Nut back to life...</p>
+            <div class="history-images">
+                <img src="assests\dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
+                <img src="assests\Dr. Nut Vintage Ad.jpg" alt="Dr. Nut Vintage Ad">
+                <img src="assests\Dr_Nut_Its_Delicious_Cropped.jpg" alt="Dr. Nut Board">
+            </div>
+        </section>
+        <hr class="red-line">
+        <hr class="yellow-line">
+    </main>
+
+    <footer >
+           <div class="logo">
+            <img src="dr-nut-logo.png" alt="Dr. Nut Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <h1>Dr. Nut brings the natural taste from real organic fruits and nuts.</h1>
+            <p>There are no added flavours or preservatives in our products.</p>
+            <p>Enjoy the refreshing taste in every sip of Dr. Nut...</p>
+        </section>
+
+        <section id="since" class="since">
+            <p>Since 1982</p>
+        </section>
+    </footer>
+</body>
+</html>
