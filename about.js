@@ -41,7 +41,7 @@
     }
 
     // Auto-slide function
-    let autoSlide = setInterval(moveToNextSlide, 500);
+    let autoSlide = setInterval(moveToNextSlide, 2000);
 
     // Pause on hover
     const carouselContainer = document.querySelector('.carousel-container');
