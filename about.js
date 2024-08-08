@@ -59,3 +59,4 @@
     // Update carousel on window resize
     window.addEventListener('resize', updateCarouselPosition);
 });
+

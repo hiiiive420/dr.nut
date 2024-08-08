@@ -18,11 +18,11 @@
                 &#9776;
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#flavours">Flavours</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#social">Social</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about.html">About</a></li>
+                <li><a href="#flavours.html">Flavours</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="#social.html">Social</a></li>
             </ul>
         </nav>
     </header>
@@ -71,20 +71,44 @@
                 <img src="assests\Dr_Nut_Its_Delicious_Cropped.jpg" alt="Dr. Nut Board">
             </div>
         </section>
-        <hr class="red-line">
-        <hr class="yellow-line">
+        <div class="red-line"></div>
+        <section class="yellow-line d-flex flex-column flex-sm-row align-items-center container-fluid"></section>
     </main>
 
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Back To Top &#x2BED</button>
+
+
+    <script>
+        let mybutton = document.getElementById("topBtn");  // Corrected ID
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+    </script>
     <footer >
            <div class="logo">
             <img src="dr-nut-logo.png" alt="Dr. Nut Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
