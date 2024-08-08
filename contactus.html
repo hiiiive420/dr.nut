@@ -1,350 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
-</head>
-<body>
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Section</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
 
-        /* General Styles */
-    
-    @font-face {
-        font-family: secondary;
-        src: url(assests/mangolia-font/Mangolia-2vvjw.ttf);
-    }
-    
-    @font-face {
-        font-family: primary;
-        src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: primary;
-    }
-    
-    /* Hero Section */
-    .hero-section {
-    
-        position: relative;
-        text-align: center;
-        color: white;
-        overflow: hidden;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-    }
-    
-    .hero-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    .hero-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure the image covers the entire div */
-    }
-    
+        <style>
+/* General Styles */
+@font-face {
+    font-family: secondary;
+    src: url(assests/mangolia-font/Mangolia-2vvjw.ttf);
+}
+
+@font-face {
+    font-family: primary;
+    src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: primary;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire div */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure content is above the image */
+}
+
+.hero-text-left {
+    text-align: center;
+    color: #8B0000;
+    font-family: secondary;
+    margin-top: 20px;
+}
+
+.hero-text-right {
+    text-align: center;
+    color: #706f6f;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero-content .h1 {
+    color: #8B0000; /* Dark red color for the heading */
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fd7e14;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #ffc107; /* Gold color for the button */
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+/* Social Media Icons */
+.social-media {
+    text-align: center;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-media .icons .icon {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #7a7777;
+}
+
+/* Service Details Section */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.py-5 {
+    padding: 3rem 0;
+}
+
+.service-details {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+.service-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.service-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-web, .text-development {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #283149;
+}
+
+.para {
+    color: #808082;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.custom-btn {
+    display: inline-block;
+    background-color: #F73859;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #f55374;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
     .hero-content {
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        z-index: 1; /* Ensure content is above the image */
+        flex-direction: row;
     }
-    
-    
-    
-    .hero-text-left {
+
+    .hero-text-left, .hero-text-right {
         text-align: left;
-        flex: 1;
-     
-        color: #8B0000;
-        font-family: secondary;
-        margin-top: 200px;
-       
     }
-    
+
+    .hero-text-left {
+        margin-top: 200px;
+    }
+
     .hero-text-right {
         text-align: right;
-        color: #a29e9e;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-text-left, .hero-text-right {
         flex: 1;
-        padding: 20px;
     }
-    
-    .hero-content .h1 {
-        color: #8B0000; /* Dark red color for the heading */
-        font-weight: bold;
-       
+}
+
+@media (max-width: 767px) {
+    .hero-content {
+        padding-top: 1rem;
     }
-    
-    
-    
-    
-    
-    .hero-content .btn:hover {
-        background-color: #aba6a7;
+
+    .hero-img {
+        height: 50vh;
+        width: 100%;
     }
-    
-    /* Contact Form Styles */
-    form {
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    form input, form textarea, form button {
-        margin: 10px 0;
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #fd7e14;
-        border-radius: 5px;
-        width: 60%;
-        box-sizing: border-box;
-        margin-left: 10px;
-    }
-    form textarea{
-        height: 100px;
-    }
-    
-    
-    form button {
-        background-color: #ffc107; /* Gold color for the button */
-        color: black;
-        border: none;
-        cursor: pointer;
-        width: 100px;
-        align-items: center;
-       margin-left: 480px;
-       margin-top: -50px;
-      
-    }
-    h1{
-        padding-left: 50px;
-        font-size: xx-large;
-    }
-    
-    /* Social Media Icons */
-    .social-media {
-        text-align: center;
-    }
-    
-    .social-media .icons {
-        display: flex;
-        justify-content: center;
-        margin: 10px 0;
-    }
-    
-    .social-media .icons .icon {
-        font-size: 70px;
-        margin: 0 10px;
-        color: #a29e9e;
-    }
-    
-    .social-media .icons .icon:hover {
-        color: #FFD700; /* Gold color on hover */
-    }
-    /* Responsive Styles */
-    @media (max-width: 1024px) {
-        .hero-text-right {
-            display: none;
-            text-align:start;
-        }
-        .hero-text-left {
-            text-align: center;
-        }
-        
-    }
-    
-    @media (max-width: 767px) {
-        .hero-section {
-            padding-top: 1rem;
-        }
-        .hero-img {
-            height: 50vh;
-            width: 100%;
-        }
-        .hero-content {
-            position: relative;
-            top: auto;
-            left: auto;
-            transform: none;
-            flex-direction: column;
-        }
-        .hero-text-left, .hero-text-right {
-            text-align: center;
-          
-        }
-        .form button{
-            text-align: left;
-        }
-    }
-    
-    
-    
-    .service-details {
-        background-color: #f9f9f9;
-        padding: 2rem 0;
-    }
-    
+
     .service-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 2rem;
+        flex-direction: column;
     }
-    
+
     .service-row.reverse {
-        flex-direction: row-reverse;
+        flex-direction: column;
     }
-    
-    .service-content {
-        flex: 1;
-        padding: 1rem;
-        padding-left: 50px;
-    }
-    
-    .service-image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    .service-image img {
-        max-width: 90%;
-        height: auto;
-        border-radius: 25px;
-    
-    }
-    
-    
-    
-    .para {
-        color: #404B69;
-        font-size: xx-large;
-        margin-bottom: 1rem;
-        height: fit-content;
-       
-    }
-    
-    @media (max-width: 767px) {
-        .service-row {
-            flex-direction: column;
-        }
-        .service-row.reverse {
-            flex-direction: column;
-        }
-    }
-    </style>
-</head>
+}
 
-<body>
 
-    <div class="hero-section">
-        <div class="hero-image">
-            <img src="Final Wireframe PDF/assests/pexels-goumbik-1414131.jpg" alt="Hero Image" class="hero-img">
-        </div>
-        <div class="hero-content">
-            <div class="hero-text-left">
-                <h1>Contact Dr. Nut</h1>
-                <form action="contact.php" method="post">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <button type="submit">Send!</button>
-                </form>
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color:#ffbc00; 
+    color: black; 
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    }
+
+#topBtn:hover {
+    background-color: #555; 
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="hero-image">
+                <img src="Final Wireframe PDF/assests/pexels-goumbik-1414131.jpg" alt="Hero Image" class="hero-img">
             </div>
-            <div class="hero-text-right">
-                <div class="social-media">
-                    <div class="icons">
-                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+            <div class="hero-content">
+                <div class="hero-text-left">
+                    <h1>Contact Dr. Nut</h1>
+                    <form action="contact.php" method="post">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send!</button>
+                    </form>
+                </div>
+                <div class="hero-text-right">
+                    <div class="social-media">
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <h1>Follow Dr. Nut on Social Media and keep updated with us...</h1>
                     </div>
-                    <h1>Follow Dr. Nut on Social Media and keep updated with us...</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-
-    
-
-    <section class="service-details py-5">
-        <div class="container">
-            <!-- Announcing the new head of Dr. Nut Director board -->
-            <div class="service-row">
-                <div class="service-content">
-                  
-                   
-                    <p class="para">Announcing the newhead ofDr.NutDirectorboard
-                        for 2025
-                        <br>
-                        Introducing 6 newflavoursforDr.Nut-OrangeMango
-                        Kiwi Honey Coconut Lemon
-                        <br>
-                       
-                        New manufacturingfactoryforLondonOntario
-                        Strawberryflavourfor2025
-                        </p>
-                </div>
-                <div class="service-image">
-                    <img src="Final Wireframe PDF/assests/pexels-didsss-2183113.jpg" alt="Manufacturing Factory" class="img-fluid rounded">
                 </div>
             </div>
         </div>
         
-    </section>
-    <div class="container">
-        <!-- Announcing the new head of Dr. Nut Director board -->
-        <div class="service-row">
-           
-            <div class="service-image">
-                <img src="Final Wireframe PDF\assests\image.png" alt="Manufacturing Factory" class="img-fluid rounded">
+        <section class="service-details py-5">
+            <div class="container">
+                <!-- Web Development -->
+                <div class="service-row">
+                    <div class="service-content">
+                        <p class="para">Announcing the new head of Dr. Nut Director board for 2025. Introducing 6 new flavours for Dr. Nut - Orange, Mango, Kiwi, Honey, Coconut, Lemon. New manufacturing factory for London, Ontario.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="Final Wireframe PDF/assests/pexels-didsss-2183113.jpg" alt="Web Development Team" class="img-fluid rounded">
+                    </div>
+                </div>
+    
+                <!-- UI/UX Designing -->
+                <div class="service-row reverse">
+                    <div class="service-content">
+                        <p class="para">Announcing the new head of Dr. Nut Director board for 2025. Introducing 6 new flavours for Dr. Nut - Orange, Mango, Kiwi, Honey, Coconut, Lemon. New manufacturing factory for London, Ontario.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="Final Wireframe PDF/assests/image.png" alt="UI/UX Design Team" class="img-fluid rounded">
+                    </div>
+                </div>
             </div>
-            <div class="service-content">
-               
-                <p class="para">Announcing the newhead ofDr.NutDirectorboard
-                    for 2025<br>
-                    Introducing 6 newflavoursforDr.Nut-OrangeMango
-                    Kiwi Honey Coconut Lemon
-        <br>
-                    New manufacturingfactoryforLondonOntario
-                    Strawberryflavourfor2025
-                  </p>
-               
-            
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+        </section>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Back To Top &#x2BED</button>
+
+
+    <script>
+        let mybutton = document.getElementById("topBtn");  // Corrected ID
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+    </script>
+    </body>
+    </html>
+
