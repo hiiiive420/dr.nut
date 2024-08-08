@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+
+        /* General Styles */
+    
+    @font-face {
+        font-family: secondary;
+        src: url(assests/mangolia-font/Mangolia-2vvjw.ttf);
+    }
+    
+    @font-face {
+        font-family: primary;
+        src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: primary;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+    
+        position: relative;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+    }
+    
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire div */
+    }
+    
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1; /* Ensure content is above the image */
+    }
+    
+    
+    
+    .hero-text-left {
+        text-align: left;
+        flex: 1;
+     
+        color: #8B0000;
+        font-family: secondary;
+        margin-top: 200px;
+       
+    }
+    
+    .hero-text-right {
+        text-align: right;
+        color: #a29e9e;
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .hero-content .h1 {
+        color: #8B0000; /* Dark red color for the heading */
+        font-weight: bold;
+       
+    }
+    
+    
+    
+    
+    
+    .hero-content .btn:hover {
+        background-color: #aba6a7;
+    }
+    
+    /* Contact Form Styles */
+    form {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    form input, form textarea, form button {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #fd7e14;
+        border-radius: 5px;
+        width: 60%;
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+    form textarea{
+        height: 100px;
+    }
+    
+    
+    form button {
+        background-color: #ffc107; /* Gold color for the button */
+        color: black;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        align-items: center;
+       margin-left: 480px;
+       margin-top: -50px;
+      
+    }
+    h1{
+        padding-left: 50px;
+        font-size: xx-large;
+    }
+    
+    /* Social Media Icons */
+    .social-media {
+        text-align: center;
+    }
+    
+    .social-media .icons {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .social-media .icons .icon {
+        font-size: 70px;
+        margin: 0 10px;
+        color: #a29e9e;
+    }
+    
+    .social-media .icons .icon:hover {
+        color: #FFD700; /* Gold color on hover */
+    }
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        .hero-text-right {
+            display: none;
+            text-align:start;
+        }
+        .hero-text-left {
+            text-align: center;
+        }
+        
+    }
+    
+    @media (max-width: 767px) {
+        .hero-section {
+            padding-top: 1rem;
+        }
+        .hero-img {
+            height: 50vh;
+            width: 100%;
+        }
+        .hero-content {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            flex-direction: column;
+        }
+        .hero-text-left, .hero-text-right {
+            text-align: center;
+          
+        }
+        .form button{
+            text-align: left;
+        }
+    }
+    
+    
+    
+    .service-details {
+        background-color: #f9f9f9;
+        padding: 2rem 0;
+    }
+    
+    .service-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .service-row.reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .service-content {
+        flex: 1;
+        padding: 1rem;
+        padding-left: 50px;
+    }
+    
+    .service-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .service-image img {
+        max-width: 90%;
+        height: auto;
+        border-radius: 25px;
+    
+    }
+    
+    
+    
+    .para {
+        color: #404B69;
+        font-size: xx-large;
+        margin-bottom: 1rem;
+        height: fit-content;
+       
+    }
+    
+    @media (max-width: 767px) {
+        .service-row {
+            flex-direction: column;
+        }
+        .service-row.reverse {
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="hero-image">
+            <img src="Final Wireframe PDF/assests/pexels-goumbik-1414131.jpg" alt="Hero Image" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-left">
+                <h1>Contact Dr. Nut</h1>
+                <form action="contact.php" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send!</button>
+                </form>
+            </div>
+            <div class="hero-text-right">
+                <div class="social-media">
+                    <div class="icons">
+                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <h1>Follow Dr. Nut on Social Media and keep updated with us...</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    
+
+    <section class="service-details py-5">
+        <div class="container">
+            <!-- Announcing the new head of Dr. Nut Director board -->
+            <div class="service-row">
+                <div class="service-content">
+                  
+                   
+                    <p class="para">Announcing the newhead ofDr.NutDirectorboard
+                        for 2025
+                        <br>
+                        Introducing 6 newflavoursforDr.Nut-OrangeMango
+                        Kiwi Honey Coconut Lemon
+                        <br>
+                       
+                        New manufacturingfactoryforLondonOntario
+                        Strawberryflavourfor2025
+                        </p>
+                </div>
+                <div class="service-image">
+                    <img src="Final Wireframe PDF/assests/pexels-didsss-2183113.jpg" alt="Manufacturing Factory" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="container">
+        <!-- Announcing the new head of Dr. Nut Director board -->
+        <div class="service-row">
+           
+            <div class="service-image">
+                <img src="Final Wireframe PDF\assests\image.png" alt="Manufacturing Factory" class="img-fluid rounded">
+            </div>
+            <div class="service-content">
+               
+                <p class="para">Announcing the newhead ofDr.NutDirectorboard
+                    for 2025<br>
+                    Introducing 6 newflavoursforDr.Nut-OrangeMango
+                    Kiwi Honey Coconut Lemon
+        <br>
+                    New manufacturingfactoryforLondonOntario
+                    Strawberryflavourfor2025
+                  </p>
+               
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
