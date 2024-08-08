@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @font-face {
+            font-family: secondary;
+            src: url(assests/mangolia-font/Mangolia-2vvjw.ttf);
+        }
+
+        @font-face {
+            font-family: primary;
+            src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
+        }
+
+        body {
+            font-family: primary;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            font-family: secondary;
+            color: #8B0000;
+            font-size: 8em;
+            margin: 0.5em auto;
+            text-align: center;
+        }
+
+        .divider {
+            border-top: 0.25em solid #8B0000;
+            margin: 1.25em 0;
+        }
+
+        .subtitle {
+            font-size: 2em;
+            color: #7b7b7b;
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .product-section {
+            padding: 1.25em;
+            position: relative;
+            height: 18em;
+            overflow: visible;
+            width: 100%;
+            margin-top: 7em;
+            margin-bottom: 12em;
+        }
+        .product-1{
+            background-color: #fcd34d;
+        }
+        .product-2{
+            background-color:#c0d156 ;
+        }
+        .product-3{
+            background-color:#f9f5bd ;
+        }
+        .product-4{
+            background-color:#fb8d00 ;
+        }
+        .product-5{
+            background-color: #c79960;
+        }
+        .product-6{
+            background-color:#ffbc00 ;
+        }
+        .product-image {
+            height: 24em;
+            position: relative;
+            margin-top: 10em;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img1 {
+            margin-left: 3em;
+            margin-right: -3em;
+        }
+
+        .img2 {
+            margin-left: -10em;
+        }
+
+        .desc {
+            margin-left: 8vw;
+        }
+
+        .lead {
+            text-align: left;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 5em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+
+            .product-image {
+                height: 15em;
+                margin-top: 5em;
+            }
+
+            .desc {
+                margin-left: 0;
+                text-align: left;
+            }
+
+            .lead {
+                font-size: 1.2rem;
+            }
+
+            .img2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 4em;
+            }
+
+            .subtitle {
+                font-size: 1.2em;
+            }
+
+            .product-image {
+                height: 18em;
+                max-height: 20em;
+                margin-top: 5em;
+                margin: auto;
+            }
+
+            .lead {
+                font-size: 1rem;
+            }
+        }
+        /*back to top button*/
+        #topBtn {
+            display: none; 
+            position: fixed; 
+            bottom: 20px;
+            right: 30px; 
+            z-index: 99;
+            border: none; 
+            outline: none; 
+            background-color:#ffbc00; 
+            color: white; 
+            cursor: pointer;
+            padding: 15px; 
+            border-radius: 10px; 
+            font-size: 18px; 
+            }
+
+        #topBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="h1 title">Flavours</h1>
+        </header>
+        <div class="divider"></div>
+        <p class="subtitle">
+            Introducing the new six member of the Dr. Nut family, Mango Kiwi Coconut Lemon Orange & Honey<br>
+            Sweet & Tangy in Every Sip
+        </p>
+    </div>
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-1">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Mango</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-2">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Kiwi</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-3">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Lemon</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-4">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Orange</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-5">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Coconut</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-6">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+        </div>
+        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+            <h2 class="display-4 font-weight-bold">Honey</h2>
+            <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </div>
+    </section>
+
+    <!--Button function-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Back To Top</button>
+
+    <script>
+        let mybutton = document.getElementById("topBtn");  // Corrected ID
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    
+</body>
+</html>
