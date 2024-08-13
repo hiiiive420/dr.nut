@@ -20,7 +20,98 @@
     font-family: primary;
     src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
 }
+        /*Nav bar*/
+        header {
+        background-color: #ffffff;
+        padding: 16px;
+        text-align: center;
+        }
+        .logo img {
+            max-height: 200px;
+        }
 
+.header-nav {
+    position: relative;
+    background-color: #8B0000;
+    margin-top: 100PX;
+   
+  
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: x-large;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    font-size: larger;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        text-align: right;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.divider{
+    border-top: 0.25em solid #8B0000;
+    margin: 1.25em 0;   
+}
+
+/* nav bar end */
 body {
     margin: 0;
     padding: 0;
@@ -281,9 +372,39 @@ h2{
 }
 
 
-        </style>
+</style>
     </head>
     <body>
+        <!--
+        <header>
+            <div class="logo">
+                <img src="assests\dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
+            </div>
+        </header>
+            <nav class="header-nav">
+                <div class="menu-icon" id="menu-icon">
+                    &#9776;
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li><a href="#flavours.html">Flavours</a></li>
+                    <li><a href="#contact.html">Contact</a></li>
+                    <li><a href="#social.html">Social</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+    
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+        -->
+
         <div class="hero-section">
             <div class="hero-image">
                 <img src="assests/pexels-goumbik-1414131.jpg" alt="Hero Image" class="hero-img">

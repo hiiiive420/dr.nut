@@ -6,6 +6,7 @@
     <title>Flavours</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        /*Font styling */
         @font-face {
             font-family: secondary;
             src: url(assests/mangolia-font/Mangolia-2vvjw.ttf);
@@ -15,7 +16,158 @@
             font-family: primary;
             src: url(assests/coolvetica/coolvetica\ condensed\ rg.ttf);
         }
+/* -----------------Nav Bar--------------------- */
 
+body {
+    margin: 0;
+    font-family: primary;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.logo-header {
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.header-nav {
+    background-color: #8B0000;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-height: 200px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    padding-right: 0.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles for Nav */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 17em; /* Aligns the dropdown directly below the header */
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        max-height: 300px; /* Adjust as needed */
+    }
+
+    .nav-links li {
+        margin: 0; /* Remove margin to avoid unnecessary spacing */
+        width: 100%;
+    }
+
+    .nav-links li a {
+        font-size: 1em;
+        color: black; /* Change font color to black */
+        padding: 10px 20px; /* Adjust padding to make the border shorter */
+        width: auto;
+        display: block;
+        border-bottom: 2px solid #8B0000; /* Add bottom border */
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .nav-links a:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 17em; /* Aligns the dropdown directly below the header */
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        max-height: 300px; 
+    }
+
+    .nav-links li {
+        margin: 0; /* Remove margin to avoid unnecessary spacing */
+        width: 100%;
+    }
+
+    .nav-links li a {
+        font-size: 1em;
+        color: black; /* Change font color to black */
+        padding: 10px 20px; /* Adjust padding to make the border shorter */
+        width: auto;
+        display: block;
+        border-bottom: 1px solid #8B0000; /* Add bottom border */
+    }
+
+    .nav-links a:hover {
+        background-color: #f0f0f0;
+    }
+}
+/* -------------End of Nav Bar------------------- */
+
+/* -------------Favourites body begin------------------- */
         body {
             font-family: primary;
             margin: 0;
@@ -42,7 +194,7 @@
             margin: 0;
             line-height: 1.5;
         }
-
+/* -------------Product Section begin------------------- */
         .product-section {
             padding: 1.25em;
             position: relative;
@@ -107,8 +259,8 @@
             }
 
             .product-image {
-                height: 15em;
-                margin-top: 5em;
+                margin-top: 1em;
+                margin-left: 0.5em;
             }
 
             .desc {
@@ -135,8 +287,9 @@
             }
 
             .product-image {
-                height: 18em;
-                max-height: 20em;
+                height: 20em;
+                width: auto;
+                /*max-height: 20em;*/
                 margin-top: 5em;
                 margin: auto;
             }
@@ -145,7 +298,8 @@
                 font-size: 1rem;
             }
         }
-        /*back to top button*/
+/* -------------Product Section End------------------- */
+/* -------------Back to Top Button------------------- */
         #topBtn {
             display: none; 
             position: fixed; 
@@ -165,11 +319,45 @@
         #topBtn:hover {
             background-color: #555; /* Add a dark-grey background on hover */
         }
+/* -------------Back to Top Button End------------------- */
+/* -------------Favourites body end------------------- */
     </style>
 </head>
 <body>
+
+        <!--Nav bar-->
+        <header class="logo-header">
+            <div class="logo">
+                <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
+            </div>
+        </header>
+        <nav class="header-nav">
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="flavours.html">Flavours</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    
+        <!--Nav script-->
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+        
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+    
+        <!--End of Nav bar-->
+    
     <div class="container">
-        <header class="header">
+        <header class="fav-header">
             <h1 class="h1 title">Flavours</h1>
         </header>
         <div class="divider"></div>
