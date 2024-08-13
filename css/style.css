@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -50,35 +49,36 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     h1, .h1 {
       font-size: 2.5rem;
     }
+
+    h2, .h2 {
+      font-size: 2rem;
+    }
+
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+
+    h4, .h4 {
+      font-size: 1.5rem;
+    }
+
+
   }
   
   h2, .h2 {
     font-size: calc(1.325rem + 0.9vw);
-  }
-  @media (min-width: 1200px) {
-    h2, .h2 {
-      font-size: 2rem;
-    }
   }
 
   
   h3, .h3 {
     font-size: calc(1.3rem + 0.6vw);
   }
-  @media (min-width: 1200px) {
-    h3, .h3 {
-      font-size: 1.75rem;
-    }
-  }
+
   
   h4, .h4 {
     font-size: calc(1.275rem + 0.3vw);
   }
-  @media (min-width: 1200px) {
-    h4, .h4 {
-      font-size: 1.5rem;
-    }
-  }
+ 
   
   h5, .h5 {
     font-size: 1.25rem;
@@ -95,13 +95,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   
 
   
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.container{
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -109,28 +103,34 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-left: auto;
 }
 
+@media (max-width: 480px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
+  .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
+  .container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container {
     max-width: 1320px;
   }
 }
@@ -244,7 +244,7 @@ svg {
     text-align: center !important;
   }
   
-  /*favourites*/
+  /favourites/
 
 .title {
     font-family: secondary;
@@ -369,7 +369,7 @@ svg {
         font-size: 1rem;
     }
 }
-/*back to top button*/
+/back to top button/
 #topBtn {
     display: none; 
     position: fixed; 
