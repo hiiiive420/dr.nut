@@ -202,7 +202,7 @@ body {
             overflow: visible;
             width: 100%;
             margin-top: 8em;
-            margin-bottom: 15em;
+            margin-bottom: 20em;
             display: flex !important;
             flex-direction: column !important;
             flex-direction: row !important;
@@ -217,6 +217,7 @@ body {
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
+            margin-bottom: 1em;
         }
         .product-1{
             background-color: #fcd34d;
@@ -237,9 +238,8 @@ body {
             background-color:#8d6637 ;
         }
         .product-image {
-            height: 24em;
-            position: relative;
-            margin-top: 10em;
+           /* position: relative;*/
+            margin-top: 0 0.5em;
             max-width: 100%;
             height: auto;
         }
@@ -247,10 +247,6 @@ body {
         .img1 {
             margin-left: 3em;
             margin-right: -3em;
-        }
-
-        .img2 {
-            margin-left: -10em;
         }
 
         .desc {
@@ -277,19 +273,47 @@ body {
             .subtitle {
                 font-size: 1.5em;
             }
+            .product-section {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .product-section-image {
+                flex-direction: row;
+                width: 50%;
+                margin-bottom: 0;
+            }
 
             .product-image {
                 margin-top: 1em;
                 margin-left: 0.5em;
             }
 
+            .img2{
+                display: flex;
+                margin-left: -10em;
+                height: auto;
+                max-width: 25em;
+            }
+
+            .img1{
+                margin-left: -8em;
+                height: auto;
+                max-width: 25em;
+            }
+
+            .display-4{
+                font-size: 4em;
+            }
+
             .desc {
                 margin-left: 0;
                 text-align: left;
+                margin-top: 1em;
             }
 
             .lead {
-                font-size: 1.2rem;
+                font-size: 1.5em;
             }
 
         }
@@ -304,17 +328,50 @@ body {
             }
 
             .product-image {
-                height: 20em;
-                width: auto;
-                /*max-height: 20em;*/
-                margin-top: 5em;
-                margin: auto;
+                height: auto;
+                width: 90em;
+                max-height: 25em;
+            }
+            .img2{
+                display: flex;
+                margin-left: -8em;
+                height: auto;
+                max-width: 25em;
+            }
+
+            .img1{
+                margin-left: -8em;
+                height: auto;
+                max-width: 25em;
+            }
+
+            .display-4{
+                font-size: 4em;
+            }
+
+            .desc {
+                margin-left: 0;
+                text-align: left;
+                margin-top: 1em;
             }
 
             .lead {
-                font-size: 1rem;
+                font-size: 1.5em;
             }
         }
+        @media (min-width: 992px) {
+    .product-section {
+        padding: 2em;
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+}
 /* -------------Product Section End------------------- */
 /* -------------Back to Top Button------------------- */
         #topBtn {
@@ -385,7 +442,7 @@ body {
     </div>
     <section class="product-section product-1">
         <div class="product-section-image">
-            <img src="assests/Dr.Nut Render/mango-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/mango-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1">
             <img src="assests/Dr.Nut Render/mango-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
         <div class="desc">
