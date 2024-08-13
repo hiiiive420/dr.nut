@@ -47,7 +47,7 @@ body {
     justify-content: space-between;
 }
 
-.logo img {
+.logo-main img {
     max-height: 200px;
 }
 
@@ -395,13 +395,138 @@ body {
         }
 /* -------------Back to Top Button End------------------- */
 /* -------------Favourites body end------------------- */
+/* -------------Footer Begin------------------- */
+/* footer*/
+.foot-section {
+            position: relative;
+            height: 70vh;
+            color: white;
+        }
+        .foot-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .since {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .description {
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 65vw;
+            font-size: 2.5em;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 2.5em;
+            margin: 0 10px;
+            padding: 5px 0;
+        }
+        .copyright {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .overlay {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 40px;
+                max-width: 100vw;
+            }
+            .left-side {
+                max-width: 60%;
+            }
+            .logo {
+                width: 150px;
+                margin-top: 50px;
+                
+               
+            }
+            .since {
+                font-size: 24px;
+            }
+            .description {
+            font-size: 1em;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 65vw;
+            font-size: 2.5em;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 10px;
+            padding: 5px 0;
+        }
+        }
+
+        @media(max-width:480px){
+            .description{
+                width: 100vw;
+            }
+        }
+/* -------------Footer End------------------- */
     </style>
 </head>
 <body>
 
         <!--Nav bar-->
         <header class="logo-header">
-            <div class="logo">
+            <div class="logo-main">
                 <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
             </div>
         </header>
@@ -528,6 +653,31 @@ body {
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+<!--Footer Section-->
+<section class="foot-section">
+    <div class="foot-image">
+        <img src="assests/f3.png" alt="Hero Image" class="hero-img">
+    </div>
+    <div class="overlay">
+        <div class="left-side">
+            <img src="assests\dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo" class="logo">
+            <div class="since">Since 1982</div>
+            <p class="description">
+                Dr. Nut brings the natural taste from real organic fruits and nuts. 
+                There are no added flavours or preservatives in our products. 
+                Enjoy the refreshing taste in every sip of Dr. Nut...
+            </p>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="flavours.html">Flavours</a>
+            <a href="contactus.html">Contact</a>
+            <a href="#">Social</a>
+        </nav>
+    </div>
+    <div class="copyright">2024 Dr. Nut's products</div>
+</section>
     
 </body>
 </html>
