@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <!--<script src="js/about.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Natural Taste - Dr. Nut</title>
@@ -22,21 +22,7 @@
             margin: 0;
         }
 
-        body {
-    margin: 0;
-    font-family: primary;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    margin: 0;
-    padding: 0;
-}
-
-header {
+        header {
     position: relative;
     z-index: 10;
     background-color: #ffffff;
@@ -52,7 +38,7 @@ header {
     z-index: 11;
 }
 
-.logo img {
+.logo-main img {
     max-height: 200px;
 }
 
@@ -88,8 +74,7 @@ header {
 .nav-links a:hover {
     background-color: #555;
 }
-
-/* Responsive Styles for Nav */
+        /* Responsive Styles for Nav */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -243,7 +228,7 @@ header {
     .hero-image {
         height: 55vh;
         width: 90%;
-        /object-fit: cover;/
+        /*object-fit: cover;*/
         margin-right: 30vw;
     }
 
@@ -329,6 +314,17 @@ header {
             width: 300px;
             
         }
+/*
+        @media screen and (min-width: 1400px) {
+            .owl-carousel .owl-item img {
+            height: auto;
+            
+        }
+
+        .owl-carousel .card {
+            width: 200px;    
+        }
+}*/
 
        /* .carousel2 .card{
             width: 500px;
@@ -437,9 +433,7 @@ header {
        
     }
 
-    @media (max-width: 992px) {
-  
-  }
+   
 
   .hero-end-flavours {
         font-family: primary;
@@ -470,6 +464,8 @@ header {
     .hero-title {
         margin-top: 6vw;
     }
+
+    
         
     }
 
@@ -481,9 +477,11 @@ header {
 
         .owl-carousel .card {
          
-            width: 500px;
+            width: 380px;
             
         }
+
+        
 }
 
         .social-icons a {
@@ -494,12 +492,147 @@ header {
         .social-icons a:hover {
             color: #F73859;
         }
+
+
+
+        /* footer*/
+.foot-section {
+            position: relative;
+            height: 55vh;
+            color: white;
+        }
+        .foot-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -117px;
+            z-index: 1;
+        }
+
+       
+        .hero-img {
+            
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            width: 98.8vw; 
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .since {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .description {
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            padding-left: 0x;
+            margin-top: 50px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 10px;
+            padding: 5px 0;
+        }
+        .copyright {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .overlay {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 40px;
+            }
+            .left-side {
+                max-width: 60%;
+            }
+            .logo {
+                width: 150px;
+                margin-top: 50px;
+                
+               
+            }
+            .since {
+                font-size: 24px;
+            }
+            .description {
+                font-size: 24px;
+                /*
+                padding-left: 400px;
+                margin-top: -150px;
+                width: 40vw;*/
+            }
+            .navigation {
+                flex-direction: column;
+                align-items: flex-end;
+                margin-top: 0;
+            }
+            .navigation a {
+                font-size: 24px;
+                margin: 5px 0;
+            }
+            
+
+           
+
+            
+        }
+        @media (max-width:480px){
+
+            .hero-img{
+            
+            width: 125.5vw;
+            height: 58vh;
+                    } 
+        }
+
+       /* @media screen and (min-width: 768px) {
+            .hero-img{
+                width: 107vw;
+            }
+        }*/
+
+       
+
+        
+
     </style>
 </head>
 <body>
-   <!--Nav bar-->
-   <header>
-    <div class="logo">
+<!--Nav bar-->
+<header>
+    <div class="logo-main">
         <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
     </div>
 </header>
@@ -508,11 +641,11 @@ header {
         &#9776;
     </div>
     <ul class="nav-links" id="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="flavours.html">Flavours</a></li>
         <li><a href="contactus.html">Contact</a></li>
-        <li><a href="social.html">Social</a></li>
+        <li><a href="#">Social</a></li>
     </ul>
 </nav>
 
@@ -627,6 +760,35 @@ header {
                         <a href="#"><img src="images/back-to-top.png" alt="" style="border-radius: 15%; filter: brightness(200%); box-shadow: 2px 5px 7px rgb(83, 81, 81)"></a>
                     </div>
                     
+
+
+                    <section class="foot-section">
+                        <div class="foot-image">
+                            <img src="assests/f3.png"  alt="Hero Image" class="hero-img">
+                        </div>
+                        <div class="overlay">
+                            <div class="left-side">
+                                <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo" class="logo">
+                                <div class="since">Since 1982</div>
+
+                            </div>
+                                <p class="description">
+                                    Dr. Nut brings the natural taste from real organic fruits and nuts. 
+                                    There are no added flavours or preservatives in our products. 
+                                    Enjoy the refreshing taste in every sip of Dr. Nut...
+                                </p>
+                            
+                            <nav class="navigation">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="flavours.html">Flavours</a>
+                                <a href="contactus.html">Contact</a>
+                                <a href="#">Social</a>
+                            </nav>
+                        </div>
+                    
+                        
+                    </section>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
                     <script>

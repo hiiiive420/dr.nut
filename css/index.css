@@ -389,5 +389,45 @@ svg {
 #topBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+.d-flex {
+  display: flex !important;
+}
 
+.flex-column {
+  flex-direction: column !important;
+}
 
+ .flex-sm-row {
+    flex-direction: row !important;
+  }
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+ .mt-sm-0 {
+    margin-top: 0 !important;
+  }
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}

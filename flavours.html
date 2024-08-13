@@ -201,8 +201,22 @@ body {
             height: 18em;
             overflow: visible;
             width: 100%;
-            margin-top: 7em;
-            margin-bottom: 12em;
+            margin-top: 8em;
+            margin-bottom: 15em;
+            display: flex !important;
+            flex-direction: column !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .product-section-image{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
         }
         .product-1{
             background-color: #fcd34d;
@@ -211,16 +225,16 @@ body {
             background-color:#c0d156 ;
         }
         .product-3{
-            background-color:#f9f5bd ;
+            background-color:#e3e648;
         }
         .product-4{
-            background-color:#fb8d00 ;
+            background-color:#88b6b6 ;
         }
         .product-5{
-            background-color: #c79960;
+            background-color: #e6b984;
         }
         .product-6{
-            background-color:#ffbc00 ;
+            background-color:#8d6637 ;
         }
         .product-image {
             height: 24em;
@@ -241,6 +255,12 @@ body {
 
         .desc {
             margin-left: 8vw;
+        }
+
+        .display-4 {
+             font-size: calc(1.475rem + 2.7vw);
+             font-weight: 300;
+             line-height: 1.2;
         }
 
         .lead {
@@ -272,9 +292,6 @@ body {
                 font-size: 1.2rem;
             }
 
-            .img2 {
-                display: none;
-            }
         }
 
         @media (max-width: 480px) {
@@ -366,72 +383,71 @@ body {
             Sweet & Tangy in Every Sip
         </p>
     </div>
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-1">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-1">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/mango-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/mango-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
-            <h2 class="display-4 font-weight-bold">Mango</h2>
+        <div class="desc">
+            <h2 class="display-4">Mango</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
 
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-2">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-2">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/kiwi-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/kiwi-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
+        <div class="desc">
             <h2 class="display-4 font-weight-bold">Kiwi</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
 
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-3">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-3">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/lime-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/lime-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
-            <h2 class="display-4 font-weight-bold">Lemon</h2>
+        <div class="desc">
+            <h2 class="display-4">Lime</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
 
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-4">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-4">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/blueberry-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/blueberry-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
-            <h2 class="display-4 font-weight-bold">Orange</h2>
+        <div class="desc">
+            <h2 class="display-4">Blueberry</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
 
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-5">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-5">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/coconut-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/coconut-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
-            <h2 class="display-4 font-weight-bold">Coconut</h2>
+        <div class="desc">
+            <h2 class="display-4">Coconut</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
 
-    <section class="product-section d-flex flex-column flex-sm-row align-items-center container-fluid product-6">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
-            <img src="assests/can  1 ss tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
+    <section class="product-section product-6">
+        <div class="product-section-image">
+            <img src="assests/Dr.Nut Render/real-nuts-side-tp.png" alt="Dr. Nut Blueberry" class="product-image img1 mr-2">
+            <img src="assests/Dr.Nut Render/real-nut-front-tp.png" alt="Dr. Nut Blueberry" class="product-image img2">
         </div>
-        <div class="desc mt-4 mt-sm-0 ml-sm-4">
-            <h2 class="display-4 font-weight-bold">Honey</h2>
+        <div class="desc">
+            <h2 class="display-4">Real Nuts</h2>
             <p class="lead">Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
         </div>
     </section>
-
     <!--Button function-->
     <button onclick="topFunction()" id="topBtn" title="Go to top">Back To Top</button>
 
