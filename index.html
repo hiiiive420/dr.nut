@@ -21,29 +21,37 @@
         body {
             margin: 0;
         }
-                /* Nav bar */
-         /* General styles for the header */
+
+        body {
+    margin: 0;
+    font-family: primary;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
 header {
     position: relative;
     z-index: 10;
     background-color: #ffffff;
     text-align: center;
-
 }
 
 .header-nav {
-    display: flex;
     background-color: #8B0000;
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    list-style: none;
-    font-size: x-large;
-    justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-
+    justify-content: space-between;
+    z-index: 11;
 }
+
 .logo img {
     max-height: 200px;
 }
@@ -53,7 +61,7 @@ header {
     color: #fff;
     cursor: pointer;
     display: none;
-    text-align: center;
+    padding-right: 0.5em;
 }
 
 .nav-links {
@@ -64,6 +72,7 @@ header {
     text-align: center;
     width: 100%;
     align-items: center;
+    z-index: 1000;
 }
 
 .nav-links li {
@@ -74,14 +83,13 @@ header {
     color: #fff;
     text-decoration: none;
     font-size: 1.25em;
-
 }
 
 .nav-links a:hover {
-            background-color: #555;
-        }
+    background-color: #555;
+}
 
-/* Responsive Styles */
+/* Responsive Styles for Nav */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -89,15 +97,14 @@ header {
 
     .nav-links {
         position: absolute;
-        top: 100%;
+        top: 16em; 
         right: 0;
-        background-color: #333;
+        background-color: #fff;
         flex-direction: column;
         width: 100%;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
-        
     }
 
     .nav-links.active {
@@ -105,15 +112,66 @@ header {
     }
 
     .nav-links li {
-        margin: 10px 0;
-        text-align: center;
+        margin: 0; /* Remove margin to avoid unnecessary spacing */
+        width: 100%;
     }
-    .nav-links li a{
+
+    .nav-links li a {
         font-size: 1em;
+        color: black; /* Change font color to black */
+        padding: 10px 20px; /* Adjust padding to make the border shorter */
+        width: auto;
+        display: block;
+        border-bottom: 2px solid #8B0000; /* Add bottom border */
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .nav-links a:hover {
+        background-color: #f0f0f0;
     }
 }
 
+@media (max-width: 480px) {
+    .menu-icon {
+        display: block;
+    }
 
+    .nav-links {
+        position: absolute;
+        top: 16em; /* Aligns the dropdown directly below the header */
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        max-height: 300px; 
+    }
+
+    .nav-links li {
+        margin: 0; /* Remove margin to avoid unnecessary spacing */
+        width: 100%;
+    }
+
+    .nav-links li a {
+        font-size: 1em;
+        color: black; /* Change font color to black */
+        padding: 10px 20px; /* Adjust padding to make the border shorter */
+        width: auto;
+        display: block;
+        border-bottom: 1px solid #8B0000; /* Add bottom border */
+    }
+
+    .nav-links a:hover {
+        background-color: #f0f0f0;
+    }
+}
+/* End of Nav Bar */
 .about-us {
     margin-top: 20px;
 }
@@ -145,8 +203,8 @@ header {
         .hero-title {
             font-size: 5em;
             font-family: secondary;
-            color: rgb(96, 98, 99);
-            margin-right: 0.25em;
+            color: #8b0000;
+            margin-right: 4vw;
         }
 
         .hero-text {
@@ -169,8 +227,9 @@ header {
         }
 
         .hero-end-flavours h3 {
-            font-size: 1.5em;
+            font-size: 2.5em;
             margin: 5px;
+            font-weight: 500;
         }
 
         /* Mobile view */
@@ -184,7 +243,7 @@ header {
     .hero-image {
         height: 55vh;
         width: 90%;
-        /*object-fit: cover;*/
+        /object-fit: cover;/
         margin-right: 30vw;
     }
 
@@ -203,9 +262,11 @@ header {
     .hero-title {
         font-size: 3em;
         font-family: secondary;
-        color: rgb(96, 98, 99);
+        margin-right: 1vw;
         text-align: center;
     }
+
+    
 
     .hero-text {
         width: 40%;
@@ -214,7 +275,7 @@ header {
         color: rgb(180, 182, 184);
         line-height: 1.4;
         font-family: primary;
-        margin-left: 55vw;
+        margin-left: 57vw;
     }
 
     .hero-end-flavours {
@@ -222,21 +283,26 @@ header {
         padding-top: 8px;
         padding-bottom: 8px;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
     }
 
     .hero-end-flavours h3 {
-        font-size: 1.25em;
-        padding: 3px 10px;
-        text-align: center;
-        overflow: visible;
+        font-size: 1.6em;
+        font-weight: 500;
+        
+        
     }
 
     .hero-end-flavours .fav{
         display: none;
         
     }
+
+   
+
+  
+
 }
 .card-body{
     margin-top: -20%;
@@ -253,14 +319,22 @@ header {
         }
 
         .owl-carousel .owl-item img {
-            height: auto;
+            height: 600px;
             margin: 5px;
             object-fit: cover;
         }
 
         .owl-carousel .card {
             border: none;
+            width: 300px;
+            
         }
+
+       /* .carousel2 .card{
+            width: 500px;
+            
+        }*/
+
 
 /* video */
 /* Desktop view */
@@ -329,12 +403,23 @@ header {
         width: 50px;
         height: 50px;
     }
+
+    .owl-carousel .owl-item img {
+            height: auto;
+            
+        }
+
+        .owl-carousel .card {
+         
+            width: 100px;
+            
+        }
 }
  /*final section*/
         .follow {
             font-size: 6em;
             font-family: 'secondary';
-            color: rgb(197, 17, 17);
+            color: #8b0000;
             padding-top: 20px;
             padding-bottom: 20px;
         }
@@ -348,7 +433,58 @@ header {
                 padding-top: 20px;
                 padding-bottom: 20px;
         }
+
+       
     }
+
+    @media (max-width: 992px) {
+  
+  }
+
+  .hero-end-flavours {
+        font-family: primary;
+       
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+
+    @media (max-width: 1200px) {
+        .owl-carousel .owl-item img {
+            height: auto;
+            
+        }
+
+        .owl-carousel .card {
+         
+            width: 200px;
+            
+        }
+
+        .hero-end-flavours h3 {
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+
+    .hero-title {
+        margin-top: 6vw;
+    }
+        
+    }
+
+    @media (min-width: 1400px) {
+        .owl-carousel .owl-item img {
+            height: auto;
+            
+        }
+
+        .owl-carousel .card {
+         
+            width: 500px;
+            
+        }
+}
 
         .social-icons a {
             color: #787c7e;
@@ -361,25 +497,26 @@ header {
     </style>
 </head>
 <body>
-<!--Nav Bar-->
-<header>
+   <!--Nav bar-->
+   <header>
     <div class="logo">
         <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
     </div>
-    <nav class="header-nav">
-        <div class="menu-icon" id="menu-icon">
-            &#9776;
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="flavours.html">Flavours</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-            <li><a href="social.html">Social</a></li>
-        </ul>
-    </nav>
 </header>
+<nav class="header-nav">
+    <div class="menu-icon" id="menu-icon">
+        &#9776;
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="flavours.html">Flavours</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="social.html">Social</a></li>
+    </ul>
+</nav>
 
+<!--Nav script-->
 <script>
     const menuIcon = document.getElementById('menu-icon');
     const navLinks = document.getElementById('nav-links');
@@ -388,6 +525,8 @@ header {
         navLinks.classList.toggle('active');
     });
 </script>
+
+<!--End of Nav bar-->
 
     <div class="hero-container">
         <img class="hero-image" src="assests/hero.png" alt="Coconuts">
@@ -408,38 +547,38 @@ header {
         <h3 class="fav">6 New Flavours</h3>
     </div>
 
-    <div class="container">
+    <div class="container carousel2">
         <div class="owl-carousel owl-theme">
             <div class="card item">
-                <img class="card-img-top img-fluid" src="assests/can  1 ss tp.png" alt="Card Image 1">
+                <img class="card-img-top img-fluid" src="assests/Dr.Nut Render/mango-front-tp.png" alt="Card Image 1">
                 <div class="card-body">
                     <h4 class="card-title text-center">Mango</h4>
                 </div>
             </div>
 
             <div class="card item">
-                <img class="card-img-top img-fluid" src="assests/can  1 ss tp.png" alt="Card Image 2">
+                <img class="card-img-top img-fluid" src="assests/Dr.Nut Render/kiwi-front-tp.png" alt="Card Image 2">
                 <div class="card-body">
                     <h4 class="card-title text-center">Kiwi</h4>
                 </div>
             </div>
 
             <div class="card item">
-                <img class="card-img-top img-fluid" src="assests/can  1 ss tp.png" alt="Card Image 3">
+                <img class="card-img-top img-fluid" src="assests/Dr.Nut Render/lime-front-tp.png" alt="Card Image 3">
                 <div class="card-body">
                     <h4 class="card-title text-center">Lemon</h4>
                 </div>
             </div>
 
             <div class="card item">
-                <img class="card-img-top img-fluid" src="assests/can  1 ss tp.png" alt="Card Image 4">
+                <img class="card-img-top img-fluid" src="assests/Dr.Nut Render/coconut-front-tp.png" alt="Card Image 4">
                 <div class="card-body">
                     <h4 class="card-title text-center">coconut</h4>
                 </div>
             </div>
 
             <div class="card item">
-                <img class="card-img-top img-fluid card-img" src="assests/can  1 ss tp.png" alt="Card Image 4">
+                <img class="card-img-top img-fluid card-img" src="assests/Dr.Nut Render/blueberry-front-tp.png" alt="Card Image 4">
                 <div class="card-body">
                     <h4 class="card-title text-center">Orange</h4>
                 </div>
@@ -502,13 +641,13 @@ header {
                             dotsEach: 1, // Enable dots navigation
                             responsive: {
                                 0: {
-                                    items: 3
+                                    items: 2
                                 },
                                 576: {
                                     items: 3
                                 },
                                 768: {
-                                    items: 3
+                                    items: 5
                                 }
                             }
                         });
