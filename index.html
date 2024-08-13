@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
+    <!--<script src="js/about.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Natural Taste - Dr. Nut</title>
     <style>
@@ -21,6 +21,102 @@
         body {
             margin: 0;
         }
+                /* Nav bar */
+         /* General styles for the header */
+header {
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+.header-nav {
+    display: flex;
+    background-color: #8B0000;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: x-large;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+
+}
+.logo img {
+    max-height: 200px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25em;
+
+}
+
+.nav-links a:hover {
+            background-color: #555;
+        }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        
+    }
+
+    .nav-links.active {
+        max-height: 300px; /* Adjust as needed */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .nav-links li a{
+        font-size: 1em;
+    }
+}
+
+
+.about-us {
+    margin-top: 20px;
+}
 
         .hero-container {
             position: relative;
@@ -50,6 +146,7 @@
             font-size: 5em;
             font-family: secondary;
             color: rgb(96, 98, 99);
+            margin-right: 0.25em;
         }
 
         .hero-text {
@@ -264,6 +361,34 @@
     </style>
 </head>
 <body>
+<!--Nav Bar-->
+<header>
+    <div class="logo">
+        <img src="assests/dr.nut-logo-final-texturied.png" alt="Dr. Nut Logo">
+    </div>
+    <nav class="header-nav">
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="flavours.html">Flavours</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="social.html">Social</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
     <div class="hero-container">
         <img class="hero-image" src="assests/hero.png" alt="Coconuts">
         <div class="hero-overlay">
@@ -336,7 +461,7 @@
         </span>
         </div>
 </div>
-
+  
     <div class="container">
         <center>
             <h1 class="follow">Follow us!<span style="color: #ffbc00;">Or Dont</span></h1>
@@ -377,10 +502,10 @@
                             dotsEach: 1, // Enable dots navigation
                             responsive: {
                                 0: {
-                                    items: 1
+                                    items: 3
                                 },
                                 576: {
-                                    items: 2
+                                    items: 3
                                 },
                                 768: {
                                     items: 3
