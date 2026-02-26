@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["php83", "php83Packages.composer", "nginx"]
+
+[start]
+cmd = "php -S 0.0.0.0:8080"
